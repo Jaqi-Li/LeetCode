@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <math.h>
+#define INT_MAX 0x7fffffff
 
 /**
  * 给你一个二叉搜索树的根节点 root ，返回 树中任意两不同节点值之间的最小差值 。

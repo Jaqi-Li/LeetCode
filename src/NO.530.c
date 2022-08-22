@@ -9,6 +9,7 @@
 #define MIN(x,y)    (x<y?x:y)
 
 
+
 int getMinimumDifference(struct TreeNode* root) {
     int minDifference = INT_MAX, preVal = -1;
     inorderTraversal(root,&preVal,&minDifference);
