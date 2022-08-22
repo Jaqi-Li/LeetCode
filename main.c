@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <malloc.h>
-#include "inc/NO.833.h"
+#include "inc/NO.1880.h"
 /*  test541()
 void test541()
 {
@@ -45,6 +45,7 @@ void test2129()
 }
  */
 
+/*
 void test833()
 {
     int indices[] = {2,2};
@@ -53,8 +54,12 @@ void test833()
     int k = 2;
     printf("%s",findReplaceString("abcde",indices,k,&sources,k,&targets,k));
 }
+ */
 int main() {
-    test833();
+
+    char s[] = "abcd";
+    char t[] = "acbd";
+    printf("%d",strcmp(s,t));
 
     return 0;
 }
