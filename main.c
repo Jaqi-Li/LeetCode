@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <malloc.h>
-#include "inc/NO.1880.h"
+#include "inc/NO.321.h"
 /*  test541()
 void test541()
 {
@@ -56,10 +56,6 @@ void test833()
 }
  */
 int main() {
-
-    char s[] = "abcd";
-    char t[] = "acbd";
-    printf("%d",strcmp(s,t));
 
     return 0;
 }
