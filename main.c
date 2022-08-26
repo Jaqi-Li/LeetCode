@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <malloc.h>
-#include "inc/NO.936.h"
+#include "inc/NO.62.h"
 /*  test541()
 void test541()
 {
@@ -56,10 +56,7 @@ void test833()
 }
  */
 int main() {
-    char stamp[] = "abc", target[] = "ababc";
-    int k;
-    int *result;
-    result = movesToStamp(stamp,target,&k);
+    uniquePaths(3,7);
 
     return 0;
 }
