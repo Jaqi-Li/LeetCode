@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <malloc.h>
-#include "inc/NO.62.h"
+#include "inc/NO.55.h"
 /*  test541()
 void test541()
 {
@@ -56,7 +56,7 @@ void test833()
 }
  */
 int main() {
-    uniquePaths(3,7);
-
+    int test[] = {3,2,1,0,4};
+    canJump(test,sizeof(test)/sizeof(test[0]));
     return 0;
 }
