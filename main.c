@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <malloc.h>
-#include "inc/NO.912.h"
+#include "inc/NO.215.h"
 /*  test541()
 void test541()
 {
@@ -56,13 +56,9 @@ void test833()
 }
  */
 int main() {
-    int arr[]={3,1,2,3,6,8,54,-75,645,-57,35};
+    int arr[]={2,1};
     int len = sizeof(arr) / sizeof(arr[0]);
-    int * res;
 
-    res = sortArray(arr,len,&len);
-    int i;
-    for (i = 0;i < len; ++i)
-        printf("%-4d",res[i]);
+    int res = findKthLargest(arr,len,2);
     return 0;
 }
