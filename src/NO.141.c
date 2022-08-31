@@ -8,11 +8,11 @@
 ********************************************************************************/
 #include "../inc/NO.141.h"
 
-bool hasCycle(struct ListNode *head) {
+bool hasCycle(struct NO141_ListNode *head) {
 
     if (NULL == head || NULL == head->next)
         return false;
-    struct ListNode *p,*q;
+    struct NO141_ListNode *p,*q;
     p = head;
     q = head->next;
 

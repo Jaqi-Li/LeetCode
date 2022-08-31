@@ -1,15 +1,14 @@
 /********************************************************************************
 * @author: Li jiaqi
 * @email: 547222867@qq.com
-* @date: 2022/8/23 1:30
+* @date: 2022/8/30 17:13
 * @version: 1.0
 * @description:
 ********************************************************************************/
 
-#ifndef LEETCODE_NO_141_H
-#define LEETCODE_NO_141_H
+#ifndef LEETCODE_NO_2_H
+#define LEETCODE_NO_2_H
 
-#include <stdbool.h>
 #include <stdio.h>
 
 /**
@@ -20,11 +19,12 @@
  * };
  */
 
-struct NO141_ListNode {
+struct NO2_ListNode {
     int val;
-    struct NO141_ListNode *next;
+    struct NO2_ListNode *next;
 };
 
 
-bool hasCycle(struct NO141_ListNode *head);
-#endif //LEETCODE_NO_141_H
+struct NO2_ListNode* addTwoNumbers(struct NO2_ListNode* l1, struct NO2_ListNode* l2);
+
+#endif //LEETCODE_NO_2_H
