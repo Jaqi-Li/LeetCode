@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <math.h>
-#include "inc/NO.946.h"
+#include "inc/NO.1526.h"
 /*  test541()
 void test541()
 {
@@ -57,9 +57,13 @@ void test833()
 }
  */
 int main() {
-    int arr1[] = {1,2,3,4,5};
-    int arr2[] = {4,5,3,2,1};
+    int arr1[] = {1,2,3,2,1};
+    int arr2[] = {0,0,0,0,0};
+    int i;
 
-    validateStackSequences(arr1,5,arr2,5);
+    int *res = getSubArray(arr1,5,arr2,0);
+
+    for (i = 0; i < 2; ++i)
+        printf("%-4d",res[i]);
     return 0;
 }
