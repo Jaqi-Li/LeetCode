@@ -59,11 +59,9 @@ void test833()
 int main() {
     int arr1[] = {1,2,3,2,1};
     int arr2[] = {0,0,0,0,0};
-    int i;
+    int i = 10;
 
-    int *res = getSubArray(arr1,5,arr2,0);
+    int arr3[i];
 
-    for (i = 0; i < 2; ++i)
-        printf("%-4d",res[i]);
     return 0;
 }
