@@ -1,15 +1,18 @@
 /********************************************************************************
 * @author: Li jiaqi
 * @email: 547222867@qq.com
-* @date: 2022/9/4 22:51
+* @date: 2022/9/4 23:53
 * @version: 1.0
 * @description:
 ********************************************************************************/
 
-#ifndef LEETCODE_NO_224_H
-#define LEETCODE_NO_224_H
+#ifndef LEETCODE_NO_1278_H
+#define LEETCODE_NO_1278_H
 
-#include <string>
+#include <string.h>
+#include <math.h>
 
-int calculate(char * s);
-#endif //LEETCODE_NO_224_H
+int Str_cost(char * s,int left,int right);
+
+int palindromePartition(char * s, int k);
+#endif //LEETCODE_NO_1278_H
