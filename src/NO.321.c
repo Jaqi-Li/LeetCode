@@ -24,7 +24,7 @@ int *maxNumber(int *nums1, int nums1Size, int *nums2, int nums2Size, int k, int 
     for (i = MAX(0,k-nums2Size); i <= MIN(k,nums1Size);++i){
         int * nums1SubSeq = maxSubNumber(nums1,nums1Size,i);
         int * nums2SubSeq = maxSubNumber(nums2,nums2Size,k-i);
-        int * newMaxNumber = merge(nums1SubSeq,i,nums2SubSeq,k-i);
+        int * newMaxNumber = NO321_merge(nums1SubSeq,i,nums2SubSeq,k-i);
         if (compare(newMaxNumber,k,0,maxNumber,k,0)){
             free(maxNumber);
             maxNumber = newMaxNumber;
@@ -57,7 +57,7 @@ int * maxSubNumber(int *nums1, int nums1Size, int k) {
     return maxNumber;
 }
 
-int * merge(int *nums1, int nums1Size, int *nums2, int nums2Size) {
+int * NO321_merge(int *nums1, int nums1Size, int *nums2, int nums2Size) {
     if (nums1Size <= 0)
         return nums2;
     if (nums2Size <= 0)

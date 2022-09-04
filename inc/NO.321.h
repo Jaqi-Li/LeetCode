@@ -22,7 +22,7 @@ int * maxNumber(int* nums1, int nums1Size, int* nums2, int nums2Size, int k, int
  */
 int * maxSubNumber(int * nums1, int nums1Size, int k);
 
-int * merge(int * nums1, int nums1Size, int * nums2, int nums2Size);
+int * NO321_merge(int * nums1, int nums1Size, int * nums2, int nums2Size);
 
 /* Compare the dictionary order of two array */
 int compare(const int * nums1, int nums1Size, int index1, const int * nums2, int nums2Size, int index2);

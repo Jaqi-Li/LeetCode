@@ -21,14 +21,14 @@ struct NO23_ListNode* mergeTwoLists(struct NO23_ListNode * fir, struct NO23_List
     return sed;
 }
 
-struct NO23_ListNode* merge(struct NO23_ListNode** lists , int left, int right){
+struct NO23_ListNode* NO23_merge(struct NO23_ListNode** lists , int left, int right){
     if (left > right)
         return NULL;
     if (left == right)
         return lists[left];
     int mid = (left + right) / 2;
-    return mergeTwoLists(merge(lists,left,mid), merge(lists,mid+1,right));
+    return mergeTwoLists(NO23_merge(lists,left,mid), NO23_merge(lists,mid+1,right));
 }
 struct NO23_ListNode *mergeKLists(struct NO23_ListNode **lists, int listsSize) {
-    return merge(lists,0,listsSize-1);
+    return NO23_merge(lists,0,listsSize-1);
 }

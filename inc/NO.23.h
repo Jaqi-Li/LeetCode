@@ -28,6 +28,6 @@ struct NO23_ListNode* mergeKLists(struct NO23_ListNode** lists, int listsSize);
 
 struct NO23_ListNode* mergeTwoLists(struct NO23_ListNode * fir, struct NO23_ListNode * sed);
 
-struct NO23_ListNode* merge(struct NO23_ListNode** lists , int left, int right);
+struct NO23_ListNode* NO23_merge(struct NO23_ListNode** lists , int left, int right);
 
 #endif //LEETCODE_NO_23_H

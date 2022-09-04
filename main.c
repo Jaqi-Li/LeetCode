@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <math.h>
-#include "inc/NO.1526.h"
+#include "inc/NO.84.h"
 /*  test541()
 void test541()
 {
@@ -57,11 +57,7 @@ void test833()
 }
  */
 int main() {
-    int arr1[] = {1,2,3,2,1};
-    int arr2[] = {0,0,0,0,0};
-    int i = 10;
-
-    int arr3[i];
-
+    int arr[] = {2,1,5,6,2,3};
+    largestRectangleArea(arr,6);
     return 0;
 }
