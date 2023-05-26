@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <math.h>
-#include "inc/NO.84.h"
+#include "inc/NO.2000.h"
 /*  test541()
 void test541()
 {
@@ -57,7 +57,11 @@ void test833()
 }
  */
 int main() {
-    int arr[] = {2,1,5,6,2,3};
-    largestRectangleArea(arr,6);
+
+    char test[] = "abcd";
+    char ch = 'z';
+    char *result = reversePrefix(test,ch);
+    printf("%s",result);
+
     return 0;
 }
